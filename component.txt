@@ -1,0 +1,14 @@
+.about-me{
+    width: 90%;
+    background-color: gray;
+    height: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+responsive p 
+  p{
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }

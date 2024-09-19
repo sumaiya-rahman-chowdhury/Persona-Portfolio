@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    background-color: #999999;
+    position: sticky;
+    width: 100%;
+}
+
+ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    /* height: 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+a:hover {
+    border-bottom: 3px solid red;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+
+.hamburger-menu {
+    display: none;
+}
+
+.banner {
+    height: 100vh;
+    max-width: 100%;
+    /* Keeps the content from stretching too wide */
+    background-image: url("/images/profilePic.png"),
+        linear-gradient(45deg, transparent 0%, transparent 27%, rgba(214, 214, 214, 0.06) 27%, rgba(214, 214, 214, 0.06) 38%, transparent 38%, transparent 100%),
+        linear-gradient(45deg, transparent 0%, transparent 39%, rgba(214, 214, 214, 0.06) 39%, rgba(214, 214, 214, 0.06) 68%, transparent 68%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 74%, rgba(214, 214, 214, 0.06) 74%, rgba(214, 214, 214, 0.06) 79%, transparent 79%, transparent 100%),
+        linear-gradient(90deg, rgb(14, 13, 13), rgb(133, 126, 126));
+    background-size: 600px auto, cover, cover, cover, cover;
+    background-repeat: no-repeat;
+    background-position: bottom right, center, center, center, center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.banner h1 {
+    color: aliceblue;
+    text-align: left;
+    margin: 30px 0 10px 0;
+}
+
+p {
+    color: #999999;
+    font-size: 14px;
+    width: 400px;
+    text-align: justify;
+    margin: 0px 0 10px 0;
+}
+
+.banner-tag {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+button {
+    padding: 10px 6px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(201, 199, 98);
+    transition: background-color .5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.about-me {
+    width: 90%;
+    background-image:
+        linear-gradient(45deg, transparent 0%, transparent 27%, rgba(214, 214, 214, 0.06) 27%, rgba(214, 214, 214, 0.06) 38%, transparent 38%, transparent 100%),
+        linear-gradient(45deg, transparent 0%, transparent 39%, rgba(214, 214, 214, 0.06) 39%, rgba(214, 214, 214, 0.06) 68%, transparent 68%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 74%, rgba(214, 214, 214, 0.06) 74%, rgba(214, 214, 214, 0.06) 79%, transparent 79%, transparent 100%),
+        linear-gradient(90deg, rgb(14, 13, 13), rgb(133, 126, 126));
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    /* margin: 20px 0; */
+    font-size: 15px;
+    text-align: left;
+    text-align: center;
+    margin: auto;
+    color: #999999;
+    margin-bottom: 30px;
+
+}
+
+table:hover {
+    color: white;
+    background-color: black;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    border: 2px solid solid;
+}
+
+th,
+td {
+    border: 1px solid rgb(48, 44, 44);
+    padding: 10px;
+}
+
+.what-i-do {
+    width: 90%;
+    margin: auto;
+    /* margin-top: 30px; */
+}
+
+.what-i-do p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+.tech-box {
+    width: 90%;
+     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tech-box h4 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+
+}
+
+.tech-box p {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.texhnology {
+    padding: 5px 0px;
+    box-shadow: 1px 1px 5px black;
+}
+.contact-box{
+    background-image:
+    linear-gradient(45deg, transparent 0%, transparent 27%, rgba(214, 214, 214, 0.06) 27%, rgba(214, 214, 214, 0.06) 38%, transparent 38%, transparent 100%),
+    linear-gradient(45deg, transparent 0%, transparent 39%, rgba(214, 214, 214, 0.06) 39%, rgba(214, 214, 214, 0.06) 68%, transparent 68%, transparent 100%),
+    linear-gradient(90deg, transparent 0%, transparent 74%, rgba(214, 214, 214, 0.06) 74%, rgba(214, 214, 214, 0.06) 79%, transparent 79%, transparent 100%),
+    linear-gradient(90deg, rgb(14, 13, 13), rgb(133, 126, 126));
+    width: 90%;
+    margin: auto;
+   gap: 10px;
+   margin-bottom: 30px;
+   color: wheat;
+}
+.lets-connect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+}
+.contact-mss{
+    width: 50%;
+}
+input,textarea{
+    width: 500px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: transparent;
+    outline: none;
+
+}
+
+
+
+
+@media (max-width: 442px) {
+
+    .banner {
+        background-size: 300px auto, cover, cover, cover, cover;
+        position: relative;
+    }
+
+    .responsive-nav-items {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .banner-tag {
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+
+    .banner h1 {
+        font-size: 18px;
+        text-align: center;
+        margin: 30px 0 10px 0;
+    }
+
+    .banner p {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+
+    .cv-btn {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+    }
+
+    .about-me {
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+
+    .about-me p {
+        width: 100%;
+        font-size: 10px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+    }
+
+    th,
+    td {
+        font-size: 8px;
+        padding: 5px;
+        word-break: break-all;
+    }
+
+    .what-i-do p {
+        width: 100%;
+        font-size: 10px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+    }
+
+    .tech-box {
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .tech-box h4 {
+        font-size:15px ;
+        color: rgb(54, 46, 46);
+    }
+
+    .tech-box p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .lets-connect{
+       flex-direction: column;
+       align-items: normal;
+        padding:10px;
+    }
+    .contact-mss{
+        width: 100%;
+    }
+    .contact-mss p{
+        width: 100%;
+    }
+    input,textarea{
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+}
+
+/* Medium devices (Tablet, 768px and up) */
+@media (max-width: 768px) {
+    .banner {
+        background-size: 300px auto, cover, cover, cover, cover;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .responsive-nav-items {
+        display: none;
+    }
+    .tech-box {
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .about-me{
+        height: auto;
+    }
+
+    .tech-box h4 {
+        font-size:15px ;
+        color: rgb(54, 46, 46);
+    }
+
+    .tech-box p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .lets-connect{
+       flex-direction: column;
+       align-items: normal;
+        padding:10px;
+    }
+    .contact-mss{
+        width: 100%;
+    }
+    .contact-mss p{
+        width: 100%;
+    }
+    input,textarea{
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .about-me p{
+        font-size: 10px;
+    }
+    table{
+        word-break: normal;
+        font-size: 10px;
+    }
+
+}
+
+/* Small devices (mobile, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Styles for small mobile devices */
+    .responsive-nav-items {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+    
+}
+
+/* Medium devices (tablet, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for tablets */
+    .responsive-nav-items {
+        display: none;
+    }
+
+    .banner {
+        background-size: 500px auto, cover, cover, cover, cover;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+    .responsive-nav-items {
+        display: none;
+    }
+    .tech-box {
+        /* width: 80%;
+        margin: auto;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px; */
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .about-me{
+        height: auto;
+    }
+
+    .tech-box h4 {
+        font-size:15px ;
+        color: rgb(54, 46, 46);
+    }
+
+    .tech-box p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .lets-connect{
+       flex-direction: column;
+       align-items: normal;
+        padding:10px;
+    }
+    .contact-mss{
+        width: 100%;
+    }
+    .contact-mss p{
+        width: 100%;
+    }
+    input,textarea{
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .about-me p{
+        font-size: 10px;
+    }
+    table{
+        word-break: normal;
+        font-size: 10px;
+    }
+}
+
+/* Large devices (desktop, 992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for small desktops and laptops */
+}
+
+/* Extra large devices (desktop, 1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /* Styles for larger desktops */
+}
+
+/* Extra extra large devices (large desktop, 1400px and up) */
+@media (min-width: 1400px) {
+    /* Styles for very large desktops and 4k monitors */
+}
